@@ -1,4 +1,4 @@
-  <div [@expand]="right" (@expand.done)="animationDone($event)">
+  <div [@expand]="'right'" (@expand.done)="animationDone($event)">
     <div class="timeline" >
       <div *ngFor="let timestamp of timestamps; last as isLast; first as isFirst; index as i" class="time-group">
         <div class="milestone border-button" [class.initiate]="i===currentIndex" [@rotate]="done" 
