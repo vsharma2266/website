@@ -1,0 +1,168 @@
+.timeline {
+    text-align: center;
+    margin: 110px auto;
+    max-width: max-content;
+}
+.milestone {
+    width: 20px;
+    height: 20px;
+    background: #ff4500;
+    display: inline-block;
+    border: solid 3px #24e1f4;
+    cursor: pointer;
+}
+
+.year {
+    position: absolute;
+    color: white;
+    top: 36px;
+    left: -5px;
+    opacity: 0;
+}
+
+.path {
+    align-self: center;
+    display: inline-block;
+    height: 10px;
+    width: 80px;
+    background: #f8f8ff;
+    border: solid 2px #832424;
+    display: inline-block;
+    vertical-align: super;
+}
+
+
+.heading {
+    position: absolute;
+    color: white;
+    top: -50px;;
+    left: -5px;
+    opacity: 0;
+
+}
+
+.time-group {
+    display: inline-block; 
+        position: relative
+}
+
+.width {
+    display: inline-flex;
+}
+
+.border-button {
+    transition: all 0.6s linear;
+}
+.border-button:hover { 
+    transform: rotate(0deg); 
+}
+
+.initiate {
+    animation-name: stretch;
+    animation-duration: 1s; 
+    animation-timing-function: ease-out; 
+    animation-delay: 0;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-fill-mode: none;
+    animation-play-state: running;
+}
+
+.description {
+    margin: 110px auto 62px;
+    font-size: 24px;
+    color: wheat;
+    text-align: center;
+    opacity: 0;
+    width: calc(100%*7/10)
+}
+
+.year-selected {
+    color: #ff9770;
+}
+
+.heading-selected {
+    color: #ff9770;
+}
+
+@keyframes stretch {
+    0% {
+      background-color: red;
+      border: solid 3px #f8f8ff;
+    }
+    50% {
+      background-color: orange;
+      border: solid 3px #24e1f4;
+    }
+    100% {
+      background-color: yellow;
+      border: solid 3px #ff4500;
+    }
+  }
+
+@media (max-width: 1024px) {
+    .path {
+        width: 60px;
+    }
+    .heading {
+        top: -50px;
+        left: -28.2px;
+        opacity: 0;
+        width: 74px;
+        text-align: center;
+    }
+};
+
+@media (min-width: 1024px) {
+    .path {
+        width: 90px;
+    }
+    .heading {
+        font-size: 16px;
+        left: -45.5px;
+        text-align: center;
+        width: 110px;                
+    }
+    .year {
+        font-size: 16px;
+    }
+};
+
+@media (min-width: 1254px) {
+    .path {
+        width: 110px;
+    }
+}
+
+@media (max-width: 769px) {
+    .time-group {
+        display: block;
+        position: relative;
+        transform: rotate(90deg);
+        margin: 51px;
+    }
+
+    .heading, .year {
+        transform: rotate(-90deg);
+    }
+
+    .heading {
+        top: -80px;
+        left: -39.2px;
+        opacity: 0;
+        width: 100px;
+        text-align: left;
+    }
+
+    .year {
+        top: 55px;
+    }
+
+    .description {
+        margin-top: 51px;
+    }
+
+    .timeline {
+        margin: 110px auto 45px;
+    }
+}

@@ -1,0 +1,13 @@
+  <div [@expand]="right" (@expand.done)="animationDone($event)">
+    <div class="timeline" >
+      <div *ngFor="let timestamp of timestamps; last as isLast; first as isFirst; index as i" class="time-group">
+        <div class="milestone border-button" [class.initiate]="i===currentIndex" [@rotate]="done" 
+        (click)="showDescription($event, i)"></div><div *ngIf="!isLast" class="path"></div>
+        <div class="year" [@reveal]="show" [class.year-selected]="i===currentIndex">{{ timestamp.year }}</div>
+        <div class="heading" [@reveal]="show"  [class.year-selected]="i===currentIndex">{{ timestamp.heading }}</div>
+      </div>
+    </div>
+    <div class="description" [@reveal]="displayDescription"  (@reveal.done)="descriptionToggle($event)">
+      {{ description }}
+    </div>
+  </div>

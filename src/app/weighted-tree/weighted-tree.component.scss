@@ -1,0 +1,22 @@
+.node{
+  cursor:pointer;
+}
+.node circle {
+  fill:#fff;stroke:steelblue;stroke-width:1.5px;
+}
+.node text{font:10px sans-serif;}
+
+.link {    
+  stroke: wheat;
+  stroke-width: 10px;
+}
+#vulcanWrapper {
+  border: 1px solid red;
+  margin: 24px auto;
+  width: 75%;
+}
+#vulcanWrapper svg {
+  
+   width:100%;
+   border:1px solid black;
+}
