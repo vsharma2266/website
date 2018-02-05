@@ -10,13 +10,37 @@
   stroke: wheat;
   stroke-width: 10px;
 }
-#vulcanWrapper {
+#wrapper {
   border: 1px solid red;
   margin: 24px auto;
   width: 75%;
+  min-width: 1060px;
 }
-#vulcanWrapper svg {
+#wrapper svg {
   
    width:100%;
    border:1px solid black;
+}
+
+.node-active, .node-inactive {
+  display: inline-block;
+  margin: 12px;
+  width: 20px;
+  height: 20px;
+  background: rgb(255, 69, 0);
+  border: solid rgb(36, 225, 244) 2px;
+  border-radius: 50%;
+}
+
+.node-inactive {
+  background: #fff
+}
+
+.instr {
+  display: inline-flex;
+  align-items: center;
+
+  span {
+    color: wheat;
+  }
 }

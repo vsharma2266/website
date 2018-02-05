@@ -15,7 +15,7 @@ export class WeightedTreeComponent implements OnInit {
   margin = { top: 100, right: 0, bottom: 30, left: -100 };
   width = 1000;
 
-  height = 80 * 10;
+  height = 75 * 10;
   data = treeData;
   svg: Selection<Element | EnterElement | Document | Window, {}, HTMLElement, any>
   treeMap: TreeLayout<any>
@@ -32,7 +32,7 @@ export class WeightedTreeComponent implements OnInit {
 
   ngOnInit(): void {
 
-    this.svg = d3.select("#vulcanWrapper").append("svg")
+    this.svg = d3.select("#wrapper").append("svg")
       .attr("preserveAspectRatio", "xMinYMin meet")
       .attr("height", this.height)
       .attr("width", '100%')
@@ -40,7 +40,7 @@ export class WeightedTreeComponent implements OnInit {
       .attr("transform", "translate("
       + this.margin.left + "," + (this.height / 2) + ")");
 
-    this.treeMap = d3.tree().nodeSize([40, 40]);
+    this.treeMap = d3.tree().nodeSize([35, 35]);
 
     this.root = <HierarchyRectangularNode<any>> d3.hierarchy(this.data, (d) => { return d.children; });
     this.root.x0 = 100;
@@ -48,7 +48,7 @@ export class WeightedTreeComponent implements OnInit {
     
 
     // Collapse after the second level
-    this.root.children.forEach((d) => this.collapse(d));
+    // this.root.children.forEach((d) => this.collapse(d));
     this.update(this.root);
   }
 

@@ -25,6 +25,10 @@ export const treeData = {
                 {
                   "name": "d3.js",
                   "children": []
+                },
+                {
+                  "name": "rxjs",
+                  "children": []
                 }
               ]
             },
@@ -70,6 +74,10 @@ export const treeData = {
         {
           "name": "Others",
           "children": [
+            {
+              "name": "npm",
+              "children": []
+            },
             {
               "name": "AGILE",
               "children": []

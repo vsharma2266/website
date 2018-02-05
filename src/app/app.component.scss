@@ -8,6 +8,23 @@ h2, h1 {
     white-space: nowrap;
 }
 
+.contacts {
+    text-align: center;
+    margin-bottom: 36px;
+    p, a {
+        color: #ff4500;
+    
+        small {
+            color: wheat;
+        }
+    
+        span {
+            word-wrap: break-word;
+        }
+    }
+}
+
+
 img {
     height: 200px;  
 }
@@ -112,4 +129,10 @@ img {
     h2, h1 {
         white-space: normal;
     } 
+}
+
+@media (max-width: 1060px) {
+    .container-fluid {
+        overflow-y: scroll;
+    }
 }
