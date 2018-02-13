@@ -15,7 +15,7 @@ export const treeData = {
                   "children": []
                 },
                 {
-                  "name": "Vue",
+                  "name": "React",
                   "children": []
                 },
                 {
@@ -63,12 +63,12 @@ export const treeData = {
               {
                 "name": "Spring Batch",
                 "children": []
+              },
+              {
+                "name": "Spring JDBC",
+                "children": []
               }
             ]
-          },
-          {
-            "name": "JDBC",
-            "children": []
           }]
         },
         {

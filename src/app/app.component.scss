@@ -129,6 +129,21 @@ img {
     h2, h1 {
         white-space: normal;
     } 
+
+    .arrow {
+        margin-left: 84px;
+        margin-right: 28px;
+        .line {
+            width: 24px;
+        }
+    }
+}
+
+@media (min-width: 360px) and (max-width: 560px) {
+    .arrow {
+        margin-left: 60px;
+        margin-right: 16px;
+    }
 }
 
 @media (max-width: 1060px) {
