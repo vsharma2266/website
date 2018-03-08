@@ -19,17 +19,17 @@ export const timeLineData: milestone[] = [
         For one year I got the opportunity to work with HTML, CSS and JavaScript and gained professional experience to become a better web developer.`           
     },
     {
+        year: '2011',
+        heading: 'Graviton',
+        description: `At Graviton I worked on developing customized pages for ERP called PeopleSoft. I developed on PeopleSoft's proprietary object-oriented programming language called PeopleCode.
+        I implemented business logic to PeopleSoft's pages for in house projects which included University of San Diego and County of Sacramento`
+    },
+    {
         year: '2012',
         heading: `Masters`,
         description: `I Completed my Masters from university of Southern California. Go Trojans!!. 
         Here I studied Computer and Electrical courses to further my coding and analytical skills. 
         This was very important and helpful for me as the time here in USC helped me enhance my logical thinking and problem solving along with teaching many life lessons`
-    },
-    {
-        year: '2013',
-        heading: 'Graviton',
-        description: `At Graviton I worked on developing customized pages for ERP called PeopleSoft. I developed on PeopleSoft's proprietary object-oriented programming language called PeopleCode.
-        I implemented business logic to PeopleSoft's pages for in house projects which included University of San Diego and County of Sacramento`
     },
     {
         year: '2014',
