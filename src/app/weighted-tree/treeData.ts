@@ -1,102 +1,134 @@
 export const treeData = {
-  "name": "Level 1",
-  "children": [
+  'name': 'Level 1',
+  'children': [
     {
-      "name": "Skills",
-      "children": [
+      'name': 'Skills',
+      'children': [
         {
-          "name": "JavaScript",
-          "children": [
+          'name': 'JavaScript',
+          'children': [
             {
-              "name": "Client-side",
-              "children": [
+              'name': 'Client-side',
+              'children': [
                 {
-                  "name": "Angular",
-                  "children": []
+                  'name': 'Angular',
+                  'children': []
                 },
                 {
-                  "name": "React",
-                  "children": []
+                  'name': 'React',
+                  'children': []
                 },
                 {
-                  "name": "jQuery",
-                  "children": []
+                  'name': 'jQuery',
+                  'children': []
                 },
                 {
-                  "name": "d3.js",
-                  "children": []
+                  'name': 'd3.js',
+                  'children': []
                 },
                 {
-                  "name": "rxjs",
-                  "children": []
+                  'name': 'rxjs',
+                  'children': []
                 }
               ]
             },
             {
-              "name": "Server-side",
-              "children": [
+              'name': 'Server-side',
+              'children': [
                 {
-                  "name": " Node",
-                  "children": []
+                  'name': ' Node',
+                  'children': []
                 },
                 {
-                  "name": "Expressjs",
-                  "children": []
+                  'name': 'Expressjs',
+                  'children': []
                 },
                 {
-                  "name": "Mongoose/Mongo",
-                  "children": []
+                  'name': 'Mongoose/Mongo',
+                  'children': []
                 }
               ]
             }
           ]
         },
         {
-          "name": "Java",
-          "children": [{
-            "name": "Spring",
-            "children": [
+          'name': 'Java',
+          'children': [{
+            'name': 'Spring',
+            'children': [
               {
-                "name": "Spring Framework",
-                "children": []
+                'name': 'Spring Framework',
+                'children': []
               },
               {
-                "name": "Spring Batch",
-                "children": []
+                'name': 'Spring Batch',
+                'children': []
               },
               {
-                "name": "Spring JDBC",
-                "children": []
+                'name': 'Spring JDBC',
+                'children': []
               }
             ]
           }]
         },
         {
-          "name": "Others",
-          "children": [
+          'name': 'AWS',
+          'children': [{
+            'name': 'Lambda',
+            'children': []
+          },
+          {
+            'name': 'EC2',
+            'children': []
+          },
+          {
+            'name': 'S3',
+            'children': []
+          },
+          {
+            'name': 'DynamoDB',
+            'children': []
+          },
+          {
+            'name': 'SQS',
+            'children': []
+          },
+          {
+            'name': 'SNS',
+            'children': []
+          },
+          {
+            'name': 'IAM',
+            'children': []
+          }
+        ]
+        },
+        {
+          'name': 'Others',
+          'children': [
             {
-              "name": "npm",
-              "children": []
+              'name': 'npm',
+              'children': []
             },
             {
-              "name": "AGILE",
-              "children": []
+              'name': 'AGILE',
+              'children': []
             },
             {
-              "name": "Jira",
-              "children": []
+              'name': 'Jira',
+              'children': []
             },
             {
-              "name": "Docker",
-              "children": []
+              'name': 'Docker',
+              'children': []
             },
             {
-              "name": "MySQL",
-              "children": []
+              'name': 'MySQL',
+              'children': []
             },
             {
-              "name": "Git/GitHub",
-              "children": []
+              'name': 'Git/GitHub',
+              'children': []
             }
           ]
         }

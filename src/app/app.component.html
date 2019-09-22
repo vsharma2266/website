@@ -1,4 +1,4 @@
-<div class="container-fluid">
+<!-- <div class="container-fluid">
   <div class="row">
     <div class="col-sm-6 col-sm-offset-3">
       <div class="greet">
@@ -30,4 +30,20 @@
   </div>
   <portfolio-timeline *ngIf="activeComponent==='timeline'"></portfolio-timeline>
   <portfolio-weighted-tree *ngIf="activeComponent==='tree'"></portfolio-weighted-tree>
-</div>
+</div> -->
+
+<form [formGroup]="inputForm" (ngSubmit)="submit()"> 
+  <label>First Name</label>
+  <input class="form-control" formControlName="firstName">
+  <span *ngIf="inputForm.get('firstName').invalid && inputForm.get('firstName').touched">Please add the first name</span>
+  <label>Last Name</label>
+  <input class="form-control" formControlName="lastName">
+  <span *ngIf="inputForm.get('lastName').invalid && inputForm.get('lastName').touched">Please add the last name</span>
+  <label>Eid</label>
+  <input class="form-control" formControlName="eid">
+  <span *ngIf="inputForm.get('eid').invalid && inputForm.get('eid').touched">Please add the EID</span>
+  <label>Email</label>
+  <input class="form-control" formControlName="email">
+  <span *ngIf="inputForm.get('email').invalid && inputForm.get('email').touched">Please add the Email</span>
+  <button type="submit" [disabled]=isSubmitDisabled()>Submit</button>
+</form>
